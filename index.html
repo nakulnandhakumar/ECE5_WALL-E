@@ -15,9 +15,8 @@
     
     <div class="heading">
       <h3 class='name'> Nakul Nandhakumar <br> Andrew Kim <br> Sunny Chu <br> Richard Oliveira</h3> 
-      <h3 class=pId>PID: A16722261 <br> PID: A17173792 <br> PID: A16530566 <br> PID: (Will be Added) </h3>
             
-      <h1>ECE 5 Website</h1> <!-- h1 is heading 1 -->
+      <h1>ECE 5 Lab 4 Final Robot</h1> <!-- h1 is heading 1 -->
     </div>
     
 <!--   *********************  HEADING END *********************   --> 
@@ -32,12 +31,6 @@
       <p1> The objective of this lab is to build a robot that utilizes the PID control theory to follow a black line with speed and precision. This lab aims to bring together all of the tools, skills, and concepts we have learned throughout this semester in ECE 5, which includes 3D printing, CAD, breadboarding, basic circuit design, embedded systems, C programming and more. </p1> 
       
       <br><br>
-      
-      <p1> Poster image coming soon... </p1> 
-      
-      <br><br>
-      
-      <img src = 'https://www.pm10inc.com/wp-content/themes/micron/images/placeholders/ninzio_slider_placeholder.png'>
        
       <br><br>
 <!--   *********************  INTRO END *********************   --> 
@@ -63,25 +56,45 @@
             <img src = 'https://lh3.googleusercontent.com/DF4I9npQT1LQIJnX5m7YJxWjsfR5QbCmNsTmP9PNfndi_UxVzr6YY0GVYqfIEg2DMoi6L8mN21KKMXeZrq7PRLichYUy59aGK84H2I_k2cQX9-yjHB5ch3i_OAVR1Ehs2Whhu9OjiQ=w325' class='imgmar'>
             <!-- to insert image replace the link to the image of choice ** note: keep the quotations -->
             <br>
-            <p2>IMG1 Add a picture of your breadboarded potentiometers <br> 
-              IMG2 Add picture of your breadboarded photoresistors</p2>
+            <p2>IMG1: Breadboarded Potentiometers <br> 
+              IMG2: Breadboarded Photoresistors</p2>
             <br><br>
          
           <p class='box2'>
-            Comments on output? 
-            What range of values did your potentiometer output? 
-            Did Turning your potentiometer clockwise increase or decrease the value?
+            <b>Description IMG1: </b>
             <br><br>
-            &emsp; Turning the potentiometer clockwise increased the value of the potentiometer.
+            The potentiometers are scaled to output values between 0 and 100. The leftmost potentiometer controls the speed of the robot and the next three potentiometers control the proportion, integral, and derivative coefficients respectively, which will be used in the PID code. Turning the potentiometers clockwise increased the values of the potentiometers and vice versa.
             <br><br><br> 
-            What range of values did your photo resistors output for a white surface and for a black surface?
+            <b>Description IMG2: </b>
             <br><br>
-            &emsp; For a white surface the values of the photoresistors were around 350-400 and for a black surface, the value of the photoresistors were around 650-700. The optimal distance from the ground for the photoresistors to be at is 1.5 inches.
+            There are 7 photoresistors, each is a separate series circuit with a resistor and connected to an analog input pin. For a white surface the values of the photoresistors are around 210-310 and for a black surface, the value of the photoresistors are around 290-420. The optimal distance from the ground for the photoresistors to be at is 1.5 inches.
           </p> <!-- p is paragraph -->
         </div> <!-- This is the end of div box1 -->
       </div> <!-- This is the end of div interactive -->
       
-<!----------------------------------------  BUTTON 2 ---------------------------------------->
+<!----------------------------------------  BUTTON 2 ---------------------------------------->            
+      <div class ='center'>
+        <button type='button' onclick="toggleText3()" class="btn">Challenge #1C</button>
+      </div> <!--end of div class center -->
+      
+      <div class="interactive" id='interactive3' style='display: none'>
+        <div class='box1'>
+          <br>
+            <img src = 'https://lh3.googleusercontent.com/xfD_2_6G-rVCoIPGspG6ghQlJdOmSaRBeOHh-UpycfB2HIT_UKQyPG5tu0vdxCWTp291-mlTjugGRfHUlVDMdjD3iZtnpRzJz16w7Wl7slDy0kA-RhHIS4vQu0UHBgS6VfIIyZNuYQ=w325' class='imgmar'>
+            <!-- to insert image replace the link to the image of choice ** note: keep the quotations -->
+            <br>
+            <p2>
+              <b>Arduino Motor Shield</b></p2>
+            <br><br>
+          
+          <p class='box2'>
+            <b>Description</b>
+            <br><br>
+            In our case, the purpose of this motor shield is to allow us to drive multiple DC motors with the Arduino while still controlling each one separately. There are header pins soldered onto the motor shield which plug into the arduino's digital and analog pins. 
+          </p> <!-- p is paragraph -->
+        </div> <!-- This is the end of div interactive -->
+      </div> <!-- This is the end of div box1 -->
+<!----------------------------------------  BUTTON 3 ---------------------------------------->
         
       <div class ='center'> <!-- we put the buton in a container to center it -->
         <button type='button' onclick="toggleText2()" class="btn">Challenge #1D </button>
@@ -96,41 +109,12 @@
             <img src = 'https://lh3.googleusercontent.com/jMXHlMAoSUilVw_ngMidWsyrazZbmlxshN54FaXslsayn-yGZNVMyFa8h7gAV9BaAZXfr2hsnsvuWf8h9PjM0fFs7LJ1JMMH2T2UWwby2Qy6sMr25bp-ymOjHHpbq_6RPhV-wJdnKw=w350' class='imgmar'>
             <!-- to insert image replace the link to the image of choice ** note: keep the quotations -->
             <br>
-            <p2>IMG1 Add a screenshot of your solidworks chasis model <br> 
-              IMG2 Add picture of your 3D printed chasis</p2>
             <br><br>
           
           <p class='box2'>
-            Explain what you have created, what functional modifications (need at least 2) 
-            you made to the design and add a picture of your 3D printed chassis. 
+            <b>Chassis and CAD Description</b>
             <br><br>
-            &emsp; The chassis we have created is based on the chassis given to us in class. However, it is double in length and slightly wider. It's main modifications are 2 holes on the base to mount the arduino and motor shield on using screws and nuts, and the rectangular slot that the photoresistors are meant to go through with their heads facing the ground to measure where the line is. NOTE: Sorry, we forgot to take a picture of just the 3D printed chassis, so the images will be of the final assembled robot but especially showing off the 2 modifications.
-          </p> <!-- p is paragraph -->
-        </div> <!-- This is the end of div interactive -->
-      </div> <!-- This is the end of div box1 -->
-      
-<!----------------------------------------  BUTTON 3 ---------------------------------------->
-      
-      <div class ='center'>
-        <button type='button' onclick="toggleText3()" class="btn">Challenge #1C & #2 Part 1</button>
-      </div> <!--end of div class center -->
-      
-      <div class="interactive" id='interactive3' style='display: none'>
-        <div class='box1'>
-          <br>
-          
-            <img src = 'https://lh3.googleusercontent.com/c8YLVEzAIgz6Vm7CUy826Sz2He_nEcbMh-mK-Sl6rYexgTc-BYIa23ZhtjYP_JXgU8UqLavOdkJPqCHvkcmxXo1AcNYa6slhyFTNQ8DaFB-RXP7TPsTHX_d_ZNMXFPJQjI84GvBBrQ=w350' class='imgmar'>
-            <img src = 'https://lh3.googleusercontent.com/xfD_2_6G-rVCoIPGspG6ghQlJdOmSaRBeOHh-UpycfB2HIT_UKQyPG5tu0vdxCWTp291-mlTjugGRfHUlVDMdjD3iZtnpRzJz16w7Wl7slDy0kA-RhHIS4vQu0UHBgS6VfIIyZNuYQ=w325' class='imgmar'>
-            <!-- to insert image replace the link to the image of choice ** note: keep the quotations -->
-            <br>
-            <p2>IMG1 Add a picture vehicle including chassis, wheels, motors, and caster <br> 
-              IMG2 Add picture of your soldered motor shield connected to an Arduino mega</p2>
-            <br><br>
-          
-          <p class='box2'>
-            What is the purpose of the motor driver/shield?
-            <br><br>
-            &emsp; In our case, the purpose of this motor shield is to allow us to drive multiple DC motors with the Arduino while still controlling each one separately. NOTE: PICTURE OF CHASSIS IS NOT CURRENT VERSION. SEE CHLLNG #2 PART 2.
+            The chassis we have created is based on the chassis given to us in class. However, it is double in length and slightly wider. It's main modifications are 2 holes on the base to mount the arduino and motor shield on using screws and nuts, and the rectangular slot that the photoresistors are meant to go through with their heads facing the ground to measure where the line is. NOTE: Sorry, we forgot to take a picture of just the 3D printed chassis, so the images will be of the final assembled robot but especially showing off the 2 modifications.
           </p> <!-- p is paragraph -->
         </div> <!-- This is the end of div interactive -->
       </div> <!-- This is the end of div box1 -->
@@ -138,7 +122,7 @@
 <!----------------------------------------  BUTTON 4 ----------------------------------------> 
       
       <div class ='center'>
-        <button type='button' onclick="toggleText4()" class="btn">Challenge #2 Part 2</button>
+        <button type='button' onclick="toggleText4()" class="btn">Challenge #2</button>
       </div> <!--end of div class center -->
             
       <div class="interactive" id='interactive4' style='display: none'>
@@ -149,14 +133,12 @@
           <img src = 'https://lh3.googleusercontent.com/jMXHlMAoSUilVw_ngMidWsyrazZbmlxshN54FaXslsayn-yGZNVMyFa8h7gAV9BaAZXfr2hsnsvuWf8h9PjM0fFs7LJ1JMMH2T2UWwby2Qy6sMr25bp-ymOjHHpbq_6RPhV-wJdnKw=w350' class='imgmar'>
             <!-- to insert image replace the link to the image of choice ** note: keep the quotations -->
             <br>
-            <p2>IMG1 Add a picture of your fully assembled robot with all components and circuitry</p2>
            <br><br>
           
           <p class='box2'>
-            Challenge #7: Explain why you need to calibrate your photoresistor values. 
-            What problem does this help solve and what problems do you still see coming from your photoresistors?  
-            <br><br>
-            &emsp; By calibrating photoresistor values, we can more easily find the error that represents how far our robot is off the line. If we did not calibrate, we cannot tell which measurements read off of the photiresistors represent white and which represent black since they could be fluctuating.
+            <b>Challenge #2</b>
+              <br><br>
+              Our final assembled robot has a few modifications. AS you can see in the image of the robot taken from the bottom, there were two holes printed on the base of the chassis. These holes were used to bolt the arduino and motor shield to the chassis. There was also a rectangular slot added where the photoresistors are threaded through. This makes it so that the chassis provides natural light shielding and provides resistance so that the photoresistors don't bend.
           </p> <!-- p is paragraph -->
         </div> <!-- This is the end of div interactive -->
       </div> <!-- This is the end of div box1 -->
@@ -164,38 +146,39 @@
 <!----------------------------------------  BUTTON 5 ---------------------------------------->
       
       <div class ='center'>
-        <button type='button' onclick="toggleText5()" class="btn">Challenge #8</button>
+        <button type='button' onclick="toggleText5()" class="btn">Challenge #3</button>
       </div> <!--end of div class center -->
             
       <div class="interactive" id='interactive5' style='display: none'>
         <div class='box1'>
           <br>
           
-            <img src = 'https://www.pm10inc.com/wp-content/themes/micron/images/placeholders/ninzio_slider_placeholder.png' class='imgmar'>
+            <img src = 'https://lh3.googleusercontent.com/FP76i5y__gf2MaagtGc8kRmjsmhZhrrjBlH7A8EvFCAKkaBzi727v1xTn0zCmz_nv1pks0GdLhZeo7kzwouFkIKFPKO4tpDnurK26EMdPCxungwsdqZfG-QHRqJ3UIxyF6Qlz5HLXQ=w350' class='imgmar'>
             <!-- to insert image replace the link to the image of choice ** note: keep the quotations -->
             <br>
-            <p2>IMG1 Add a picture of your robot following a line 
-              (please also attach any updated video to your submission under the video tab)</p2>
+            <p2>IMG1: Picture of your robot following a line 
+             </p2>
             <br><br> 
           
           <p class='box2'>
-            What was the best PID values that you used? How well did this track? Any limitations?
+            <b>Description</b>
             <br><br>
-            &emsp; Answer here...
+            <b>What was the best PID values that you used? How well did this track? Any limitations?</b>
+            <br><br>
+            The best PID values were when P was around 35, and D and I were both 0. This is because the D caused less stability and the robot wouldn't settle on the line. The I value caused the robot to turn at random points in time. A few limitations of this type of setup is that the robot can't perform well at high speeds on frequency traacks and sharp turns. If the speed is too high and the proportional coefficient is too low then it won't make shapr enough turns and overshoot the line.
             <br><br><br>
-            What does PID stand for?  What is the purpose of the P, the I, and the D?  
+            <b>What does PID stand for?  What is the purpose of the P, the I, and the D?  
             What steps did you take to choose the best values for your robot? 
-            Explain this like you would for someone taking this course next year.
+              Explain this like you would for someone taking this course next year.</b>
             <br><br>
-            &emsp; Answer here...
-          </p> <!-- p is paragraph -->
+            PID stands for proportional, integral, derivative. The proportional coefficient determines the amount of error correction in proportion to the error. The farther from the line the robot is, the more it will turn. However, after each "P" correction, there will still be an error. The integral coefficient serves to correct this error. By cumulating the error of all the previous "P" corrections, it will make corrections to reduce error further. But because the "I" coefficient is correcting based on cumulative error, the robot will overshot the line. The derivative coefficient serves to correct this error by reducing the corrective actions as the robot turns towards the line. We found the best PID value through rigorous testing. First, we exmained the change in error that was calculated from the photoresistors while moving them over back and forth over a line. Then we ran the robot on a track multiple times while keeping the I and D at zero and varying the other coefficients. We increased the speed until the robot overshot the line and then increased the P until the robot didn't overshoot. We kept repeating these steps until the robot couldn't handle a higher P value.         </p> <!-- p is paragraph -->
         </div> <!-- This is the end of div interactive -->
       </div> <!-- This is the end of div box1 -->
       
 <!----------------------------------------  BUTTON 6 ---------------------------------------->
       
       <div class ='center'>
-        <button type='button' onclick="toggleText6()" class="btn">Video</button>
+        <button type='button' onclick="toggleText6()" class="btn">Challenge #3 Video</button>
       </div> <!--end of div class center -->
       
       <div class="interactive" id='interactive6' style='display: none'>
@@ -204,7 +187,7 @@
           <p class='box2'>
             Insert a video of your robot in action!
           </p> <!-- p is paragraph -->
-          <iframe width="420" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY"> </iframe>
+          <iframe width="420" height="315" src="https://www.youtube.com/embed/EpoFXSjGl0k"> </iframe>
             <br>
         </div> <!-- This is the end of div interactive -->
       </div> <!-- This is the end of div box1 -->
