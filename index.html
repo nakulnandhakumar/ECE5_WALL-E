@@ -198,6 +198,29 @@
         </div> <!-- This is the end of div interactive -->
       </div> <!-- This is the end of div box1 -->
       
+      
+      <!----------------------------------------  BUTTON 7 ---------------------------------------->
+      
+      <div class ='center'>
+        <button type='button' onclick="toggleText7()" class="btn">FINAL ROBOT</button>
+      </div> <!--end of div class center -->
+            
+      <div class="interactive" id='interactive7' style='display: none'>
+        <div class='box1'>
+          <br>
+          <b>FINAL ROBOT W/ ANNOTATIONS</b>
+          <br>
+            <img src = 'https://lh3.googleusercontent.com/ALFC4ROeVSDPBHO_d2tAwvkq0yCLbor56uIILR7gPbctOA0mIKyGoDBpa55vXpmeIjvXcVY0oDhIP-Xo8aDlG2b8AaSBMyWSvo3HVXc8Y4ZruF4NmcLd2kEq0dRIzBMTcVU_di2tbw=w650' class='imgmar'>
+          <br>
+          The two 3D design changes we made to our robot were adding holes on the base of the chassis that aligned with holes on the arduino and motor shield so that we could screw the arduino to the base of the chassis and mount them down, and also adding a slot for the photos resistors to go through so that the chassis would be a natural light shield. 
+          <br><br>
+          <b>COMPETITION - DRAG RACE</b>
+          <br>
+          <iframe width="420" height="315" src="https://www.youtube.com/embed/HjRHLJOJ8Aw"> </iframe>
+          </p> <!-- p is paragraph -->
+        </div> <!-- This is the end of div interactive -->
+      </div> <!-- This is the end of div box1 -->
+      
 <!--   *********************  BUTTONS END *********************   --> 
       
 <!--   ////////////////////////////////////////////////////////////////////////////////////////////////   --> 
@@ -260,6 +283,15 @@
     
     function toggleText6(text) {
       var text = document.getElementById("interactive6");
+      if (text.style.display === "none") {
+        text.style.display = "block";
+      } else {
+        text.style.display = "none";
+      }
+    }
+    
+    function toggleText7(text) {
+      var text = document.getElementById("interactive7");
       if (text.style.display === "none") {
         text.style.display = "block";
       } else {
